@@ -59,7 +59,8 @@ public class EmployeeController {
 		int totalPageCount = pages.getPageCount();
 		String baseUrl = "/employee/page/";
 
-		model.addAttribute("beginIndex", begin);
+		model.addAttribute("beginIndex", 
+				begin);
 		model.addAttribute("endIndex", end);
 		model.addAttribute("currentIndex", current);
 		model.addAttribute("totalPageCount", totalPageCount);
